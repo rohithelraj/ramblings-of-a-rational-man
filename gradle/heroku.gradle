@@ -1,0 +1,6 @@
+apply plugin: "com.heroku.sdk.heroku-gradle"
+
+heroku {
+  appName = "ramblings-of-a-rational-man"
+  buildpacks = ["heroku/jvm"]
+}
