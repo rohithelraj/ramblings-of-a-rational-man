@@ -6,7 +6,7 @@ Main page styles
   display: inline-block;
   width: 347px;
   height: 497px;
-  background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+  background: url('../../content/images/stepstoit.png') no-repeat center top;
   background-size: contain;
 }
 
@@ -17,7 +17,27 @@ Main page styles
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .hipster {
-    background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+    background: url('../../content/images/stepstoit.png') no-repeat center top;
     background-size: contain;
+  }
+}
+::ng-deep .menu-container {
+  .main-item {
+    background-color: #c74141;
+  }
+
+  .menu-item {
+    background-color: cornflowerblue;
+    border-radius: 90%;
+  }
+  .menu-title {
+    flex-direction: column;
+  }
+  .menu-item.sub-item {
+    background-color: #269191;
+  }
+  .menu-item span {
+    font-family: monospace;
+    font-size: small;
   }
 }

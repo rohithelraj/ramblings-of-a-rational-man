@@ -6,6 +6,7 @@ import { RamblingsOfARationalManSharedModule } from 'app/shared/shared.module';
 import { RamblingsOfARationalManCoreModule } from 'app/core/core.module';
 import { RamblingsOfARationalManAppRoutingModule } from './app-routing.module';
 import { RamblingsOfARationalManHomeModule } from './home/home.module';
+import { MenuModule } from '@kinect-pro/ngp-radial-menu';
 import { RamblingsOfARationalManEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
@@ -19,6 +20,7 @@ import { ErrorComponent } from './layouts/error/error.component';
   imports: [
     BrowserModule,
     RamblingsOfARationalManSharedModule,
+    MenuModule,
     RamblingsOfARationalManCoreModule,
     RamblingsOfARationalManHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here

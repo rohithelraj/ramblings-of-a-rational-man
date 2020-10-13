@@ -8,6 +8,7 @@
     "node_modules"
   ],
   "dependencies": {
+    "@angular/animations": "^10.1.5",
     "@angular/common": "10.0.0",
     "@angular/compiler": "10.0.0",
     "@angular/core": "10.0.0",
@@ -17,8 +18,9 @@
     "@angular/platform-browser-dynamic": "10.0.0",
     "@angular/router": "10.0.0",
     "@fortawesome/angular-fontawesome": "0.6.1",
-    "@fortawesome/fontawesome-svg-core": "1.2.29",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
+    "@kinect-pro/ngp-radial-menu": "^2.0.1",
     "@ng-bootstrap/ng-bootstrap": "6.1.0",
     "@ngx-translate/core": "12.1.2",
     "@ngx-translate/http-loader": "5.0.0",
