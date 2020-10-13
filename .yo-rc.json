@@ -39,7 +39,7 @@
     "languages": ["en", "de"],
     "blueprints": [],
     "herokuAppName": "ramblings-of-a-rational-man",
-    "herokuDeployType": "jar",
+    "herokuDeployType": "git",
     "herokuJavaVersion": "1.8"
   }
 }
