@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.elraj.ramblings",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "ramblingsOfARationalMan",
+    "packageName": "com.elraj.ramblings",
+    "packageFolder": "com/elraj/ramblings",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NTlhYWMzYjYxN2E0YjZjNzk3NTkzY2U4MGU2Zjg4NzY0ZGM1NzgzYjYzZWQ4NjNlZTFiYmRmMjAxODJkMzNiN2VhMDkyOTRiYmY0MWNjZDYzZDk5MmI1MjlmNDBhZWYyZWJkZmZjMjYwYzc2NjJmNmFlZjZmZWE0OWRlODBmZGM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1602581347370,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "de"],
+    "blueprints": []
+  }
+}
