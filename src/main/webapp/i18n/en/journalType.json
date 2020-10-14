@@ -1,0 +1,12 @@
+{
+  "ramblingsOfARationalManApp": {
+    "JournalType": {
+      "null": "",
+      "RAMBLING": "RAMBLING",
+      "PURPOSE": "PURPOSE",
+      "TRAINING": "TRAINING",
+      "FAMILY": "FAMILY",
+      "LOVE": "LOVE"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="journal">
+            <h2><span jhiTranslate="ramblingsOfARationalManApp.journal.detail.title">Journal</span> {{ journal.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.title">Title</span></dt>
+                <dd>
+                    <span>{{ journal.title }}</span>
+                </dd>
+                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.tags">Tags</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'ramblingsOfARationalManApp.JournalType.' + journal.tags }}">{{ journal.tags }}</span>
+                </dd>
+                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.journalDate">Journal Date</span></dt>
+                <dd>
+                    <span>{{ journal.journalDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.text">Text</span></dt>
+                <dd>
+                    <span>{{ journal.text }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/journal', journal.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -40,6 +40,7 @@
     "blueprints": [],
     "herokuAppName": "ramblings-of-a-rational-man",
     "herokuDeployType": "git",
-    "herokuJavaVersion": "1.8"
+    "herokuJavaVersion": "1.8",
+    "lastLiquibaseTimestamp": 1602650216000
   }
 }
