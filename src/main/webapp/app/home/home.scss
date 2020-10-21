@@ -21,7 +21,10 @@ Main page styles
     background-size: contain;
   }
 }
+
 ::ng-deep .menu-container {
+  width: 292px !important;
+  height: 284px !important;
   .main-item {
     background-color: #c74141;
   }
