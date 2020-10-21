@@ -26,7 +26,9 @@
                     <th scope="col"  jhiSortBy="title"><span jhiTranslate="ramblingsOfARationalManApp.journal.title">Title</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="tags"><span jhiTranslate="ramblingsOfARationalManApp.journal.tags">Tags</span> <fa-icon icon="sort"></fa-icon></th>
                     <th scope="col"  jhiSortBy="journalDate"><span jhiTranslate="ramblingsOfARationalManApp.journal.journalDate">Journal Date</span> <fa-icon icon="sort"></fa-icon></th>
+<!--
                     <th scope="col"  jhiSortBy="text"><span jhiTranslate="ramblingsOfARationalManApp.journal.text">Text</span> <fa-icon icon="sort"></fa-icon></th>
+-->
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -34,9 +36,9 @@
                 <tr *ngFor="let journal of journals ;trackBy: trackId">
                     <td><a [routerLink]="['/journal', journal.id, 'view']">{{ journal.id }}</a></td>
                     <td>{{ journal.title }}</td>
-                    <td jhiTranslate="{{ 'ramblingsOfARationalManApp.JournalType.' + journal.tags }}">{{ journal.tags }}</td>
+                    <td jhiTranslate="{{ 'ramblingsOfARationalManApp.JournalType.' + journal.tags }}" class="btn-info">{{ journal.tags }}</td>
                     <td>{{ journal.journalDate | date:'medium' }}</td>
-                    <td>{{ journal.text }}</td>
+          <!--          <td>{{ journal.text }}</td>-->
                     <td class="text-right">
                         <div class="btn-group">
                             <button type="submit"

@@ -59,6 +59,8 @@
 
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="ramblingsOfARationalManApp.journal.text" for="field_text">Text</label>
+                    <angular-editor name="text" id="field_text"
+                                    formControlName="text" [config]="config"></angular-editor>
                     <textarea class="form-control" name="text" id="field_text"
                               formControlName="text">
                     </textarea>
