@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DATE_TIME_FORMAT } from 'app/shared/constants/input.constants';
-import { Moment } from 'moment';
-import * as moment from 'moment';
 
 import { IJournal } from 'app/shared/model/journal.model';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
