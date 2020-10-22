@@ -1,14 +1,14 @@
 import { Moment } from 'moment';
-import { JournalType } from 'app/shared/model/enumerations/journal-type.model';
+import { journalType } from 'app/shared/model/enumerations/journal-type.model';
 
 export interface IJournal {
   id?: number;
   title?: string;
-  tags?: JournalType;
+  tags?: journalType;
   journalDate?: Moment;
   text?: string;
 }
 
 export class Journal implements IJournal {
-  constructor(public id?: number, public title?: string, public tags?: JournalType, public journalDate?: Moment, public text?: string) {}
+  constructor(public id?: number, public title?: string, public tags?: journalType, public journalDate?: Moment, public text?: string) {}
 }

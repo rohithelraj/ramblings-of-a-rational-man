@@ -1,6 +1,6 @@
 package com.elraj.ramblings.security;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.domain.User;
 import com.elraj.ramblings.repository.UserRepository;
 
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

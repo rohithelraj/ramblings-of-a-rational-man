@@ -2,7 +2,7 @@ package com.elraj.ramblings.service;
 
 import com.elraj.ramblings.domain.PersistentAuditEvent;
 import com.elraj.ramblings.repository.PersistenceAuditEventRepository;
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired

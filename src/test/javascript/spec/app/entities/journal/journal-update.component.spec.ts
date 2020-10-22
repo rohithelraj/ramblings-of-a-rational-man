@@ -3,7 +3,7 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
 import { of } from 'rxjs';
 
-import { RamblingsOfARationalManTestModule } from '../../../test.module';
+import { RamblingsofarationalmanTestModule } from '../../../test.module';
 import { JournalUpdateComponent } from 'app/entities/journal/journal-update.component';
 import { JournalService } from 'app/entities/journal/journal.service';
 import { Journal } from 'app/shared/model/journal.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [RamblingsOfARationalManTestModule],
+        imports: [RamblingsofarationalmanTestModule],
         declarations: [JournalUpdateComponent],
         providers: [FormBuilder],
       })

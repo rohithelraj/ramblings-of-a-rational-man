@@ -1,8 +1,8 @@
 package com.elraj.ramblings.domain.enumeration;
 
 /**
- * The JournalType enumeration.
+ * The journalType enumeration.
  */
-public enum JournalType {
+public enum journalType {
     RAMBLING, PURPOSE, TRAINING, FAMILY, LOVE
 }

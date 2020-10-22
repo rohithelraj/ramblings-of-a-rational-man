@@ -1,6 +1,6 @@
 package com.elraj.ramblings.repository;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 
 import com.elraj.ramblings.config.Constants;
 import com.elraj.ramblings.config.audit.AuditEventConverter;
@@ -28,7 +28,7 @@ import static com.elraj.ramblings.repository.CustomAuditEventRepository.EVENT_DA
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

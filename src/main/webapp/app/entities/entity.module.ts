@@ -6,10 +6,10 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'journal',
-        loadChildren: () => import('./journal/journal.module').then(m => m.RamblingsOfARationalManJournalModule),
+        loadChildren: () => import('./journal/journal.module').then(m => m.RamblingsofarationalmanJournalModule),
       },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],
 })
-export class RamblingsOfARationalManEntityModule {}
+export class RamblingsofarationalmanEntityModule {}

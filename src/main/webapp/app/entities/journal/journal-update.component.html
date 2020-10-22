@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
-            <h2 id="jhi-journal-heading" jhiTranslate="ramblingsOfARationalManApp.journal.home.createOrEditLabel">Create or edit a Journal</h2>
+            <h2 id="jhi-journal-heading" jhiTranslate="ramblingsofarationalmanApp.journal.home.createOrEditLabel">Create or edit a Journal</h2>
 
             <div>
                 <jhi-alert-error></jhi-alert-error>
@@ -12,53 +12,53 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="ramblingsOfARationalManApp.journal.title" for="field_title">Title</label>
+                    <label class="form-control-label" jhiTranslate="ramblingsofarationalmanApp.journal.title" for="field_title">Title</label>
                     <input type="text" class="form-control" name="title" id="field_title"
                            formControlName="title"/>
                     <div *ngIf="editForm.get('title')!.invalid && (editForm.get('title')!.dirty || editForm.get('title')!.touched)">
                         <small class="form-text text-danger"
                                *ngIf="editForm.get('title')?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
+                            This field is required.
                         </small>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="ramblingsOfARationalManApp.journal.tags" for="field_tags">Tags</label>
+                    <label class="form-control-label" jhiTranslate="ramblingsofarationalmanApp.journal.tags" for="field_tags">Tags</label>
                     <select class="form-control" name="tags" formControlName="tags" id="field_tags">
-                        <option value="RAMBLING">{{ 'ramblingsOfARationalManApp.JournalType.RAMBLING' | translate }}</option>
-                        <option value="PURPOSE">{{ 'ramblingsOfARationalManApp.JournalType.PURPOSE' | translate }}</option>
-                        <option value="TRAINING">{{ 'ramblingsOfARationalManApp.JournalType.TRAINING' | translate }}</option>
-                        <option value="FAMILY">{{ 'ramblingsOfARationalManApp.JournalType.FAMILY' | translate }}</option>
-                        <option value="LOVE">{{ 'ramblingsOfARationalManApp.JournalType.LOVE' | translate }}</option>
+                        <option value="RAMBLING">{{ 'ramblingsofarationalmanApp.journalType.RAMBLING' | translate }}</option>
+                        <option value="PURPOSE">{{ 'ramblingsofarationalmanApp.journalType.PURPOSE' | translate }}</option>
+                        <option value="TRAINING">{{ 'ramblingsofarationalmanApp.journalType.TRAINING' | translate }}</option>
+                        <option value="FAMILY">{{ 'ramblingsofarationalmanApp.journalType.FAMILY' | translate }}</option>
+                        <option value="LOVE">{{ 'ramblingsofarationalmanApp.journalType.LOVE' | translate }}</option>
                     </select>
                     <div *ngIf="editForm.get('tags')!.invalid && (editForm.get('tags')!.dirty || editForm.get('tags')!.touched)">
                         <small class="form-text text-danger"
                                *ngIf="editForm.get('tags')?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
+                            This field is required.
                         </small>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="ramblingsOfARationalManApp.journal.journalDate" for="field_journalDate">Journal Date</label>
+                    <label class="form-control-label" jhiTranslate="ramblingsofarationalmanApp.journal.journalDate" for="field_journalDate">Journal Date</label>
                     <div class="d-flex">
                         <input id="field_journalDate" type="datetime-local" class="form-control" name="journalDate" formControlName="journalDate" placeholder="YYYY-MM-DD HH:mm"/>
                     </div>
                     <div *ngIf="editForm.get('journalDate')!.invalid && (editForm.get('journalDate')!.dirty || editForm.get('journalDate')!.touched)">
                         <small class="form-text text-danger"
                                *ngIf="editForm.get('journalDate')?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
+                            This field is required.
                         </small>
                         <small class="form-text text-danger"
-                            [hidden]="!editForm.get('journalDate')?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                               [hidden]="!editForm.get('journalDate')?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
                             This field should be a date and time.
                         </small>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="ramblingsOfARationalManApp.journal.text" for="field_text">Text</label>
+                    <label class="form-control-label" jhiTranslate="ramblingsofarationalmanApp.journal.text" for="field_text">Text</label>
                     <angular-editor name="text" id="field_text"
                                     formControlName="text" [config]="config"></angular-editor>
                     <textarea class="form-control" name="text" id="field_text"
@@ -67,7 +67,7 @@
                     <div *ngIf="editForm.get('text')!.invalid && (editForm.get('text')!.dirty || editForm.get('text')!.touched)">
                         <small class="form-text text-danger"
                                *ngIf="editForm.get('text')?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
+                            This field is required.
                         </small>
                     </div>
                 </div>

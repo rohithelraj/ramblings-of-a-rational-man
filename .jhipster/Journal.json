@@ -10,7 +10,7 @@
     },
     {
       "fieldName": "tags",
-      "fieldType": "JournalType",
+      "fieldType": "journalType",
       "fieldValues": "RAMBLING,PURPOSE,TRAINING,FAMILY,LOVE",
       "fieldValidateRules": ["required"]
     },
@@ -25,7 +25,7 @@
       "fieldValidateRules": ["required"]
     }
   ],
-  "changelogDate": "20201014043656",
+  "changelogDate": "20201022125713",
   "dto": "mapstruct",
   "searchEngine": false,
   "service": "serviceClass",

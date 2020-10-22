@@ -2,7 +2,7 @@ package com.elraj.ramblings.service;
 
 import com.elraj.ramblings.config.Constants;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 public class MailServiceIT {
 
     private static final String[] languages = {

@@ -1,6 +1,6 @@
 package com.elraj.ramblings.web.rest;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.domain.Journal;
 import com.elraj.ramblings.repository.JournalRepository;
 import com.elraj.ramblings.service.JournalService;
@@ -31,11 +31,11 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.elraj.ramblings.domain.enumeration.JournalType;
+import com.elraj.ramblings.domain.enumeration.journalType;
 /**
  * Integration tests for the {@link JournalResource} REST controller.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class JournalResourceIT {
@@ -43,8 +43,8 @@ public class JournalResourceIT {
     private static final String DEFAULT_TITLE = "AAAAAAAAAA";
     private static final String UPDATED_TITLE = "BBBBBBBBBB";
 
-    private static final JournalType DEFAULT_TAGS = JournalType.RAMBLING;
-    private static final JournalType UPDATED_TAGS = JournalType.PURPOSE;
+    private static final journalType DEFAULT_TAGS = journalType.RAMBLING;
+    private static final journalType UPDATED_TAGS = journalType.PURPOSE;
 
     private static final ZonedDateTime DEFAULT_JOURNAL_DATE = ZonedDateTime.ofInstant(Instant.ofEpochMilli(0L), ZoneOffset.UTC);
     private static final ZonedDateTime UPDATED_JOURNAL_DATE = ZonedDateTime.now(ZoneId.systemDefault()).withNano(0);

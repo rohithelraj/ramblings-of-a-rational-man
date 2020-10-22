@@ -1,6 +1,6 @@
 package com.elraj.ramblings.config.timezone;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.repository.timezone.DateTimeWrapper;
 import com.elraj.ramblings.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

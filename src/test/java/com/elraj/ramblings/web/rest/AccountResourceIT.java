@@ -1,6 +1,6 @@
 package com.elraj.ramblings.web.rest;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.config.Constants;
 import com.elraj.ramblings.domain.User;
 import com.elraj.ramblings.repository.AuthorityRepository;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

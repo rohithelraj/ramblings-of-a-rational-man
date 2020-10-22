@@ -22,13 +22,13 @@ export class AlertErrorComponent implements OnDestroy {
   httpErrorListener: Subscription;
 
   constructor(private alertService: JhiAlertService, private eventManager: JhiEventManager, translateService: TranslateService) {
-    this.errorListener = eventManager.subscribe('ramblingsOfARationalManApp.error', (response: JhiEventWithContent<AlertError>) => {
+    this.errorListener = eventManager.subscribe('ramblingsofarationalmanApp.error', (response: JhiEventWithContent<AlertError>) => {
       const errorResponse = response.content;
       this.addErrorAlert(errorResponse.message, errorResponse.key, errorResponse.params);
     });
 
     this.httpErrorListener = eventManager.subscribe(
-      'ramblingsOfARationalManApp.httpError',
+      'ramblingsofarationalmanApp.httpError',
       (response: JhiEventWithContent<HttpErrorResponse>) => {
         const httpErrorResponse = response.content;
         switch (httpErrorResponse.status) {
@@ -59,7 +59,7 @@ export class AlertErrorComponent implements OnDestroy {
                 }
                 // convert 'something[14].other[4].id' to 'something[].other[].id' so translations can be written to it
                 const convertedField = fieldError.field.replace(/\[\d*\]/g, '[]');
-                const fieldName = translateService.instant('ramblingsOfARationalManApp.' + fieldError.objectName + '.' + convertedField);
+                const fieldName = translateService.instant('ramblingsofarationalmanApp.' + fieldError.objectName + '.' + convertedField);
                 this.addErrorAlert('Error on field "' + fieldName + '"', 'error.' + fieldError.message, { fieldName });
               }
             } else if (httpErrorResponse.error !== '' && httpErrorResponse.error.message) {

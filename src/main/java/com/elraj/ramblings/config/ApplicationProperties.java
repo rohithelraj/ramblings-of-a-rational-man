@@ -3,7 +3,7 @@ package com.elraj.ramblings.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Properties specific to Ramblings Of A Rational Man.
+ * Properties specific to Ramblingsofarationalman.
  * <p>
  * Properties are configured in the {@code application.yml} file.
  * See {@link io.github.jhipster.config.JHipsterProperties} for a good example.

@@ -1,4 +1,4 @@
-export const enum JournalType {
+export const enum journalType {
   RAMBLING = 'RAMBLING',
 
   PURPOSE = 'PURPOSE',

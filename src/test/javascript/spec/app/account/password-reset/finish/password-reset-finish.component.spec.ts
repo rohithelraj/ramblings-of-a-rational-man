@@ -4,7 +4,7 @@ import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { of, throwError } from 'rxjs';
 
-import { RamblingsOfARationalManTestModule } from '../../../../test.module';
+import { RamblingsofarationalmanTestModule } from '../../../../test.module';
 import { PasswordResetFinishComponent } from 'app/account/password-reset/finish/password-reset-finish.component';
 import { PasswordResetFinishService } from 'app/account/password-reset/finish/password-reset-finish.service';
 import { MockActivatedRoute } from '../../../../helpers/mock-route.service';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       fixture = TestBed.configureTestingModule({
-        imports: [RamblingsOfARationalManTestModule],
+        imports: [RamblingsofarationalmanTestModule],
         declarations: [PasswordResetFinishComponent],
         providers: [
           FormBuilder,

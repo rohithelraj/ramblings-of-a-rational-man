@@ -18,10 +18,10 @@ spring:
     # Uncomment the following line to enable tests against production database type rather than H2, using Testcontainers
     #active: testcontainers
   application:
-    name: ramblingsOfARationalMan
+    name: ramblingsofarationalman
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:ramblingsOfARationalMan;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:ramblingsofarationalman;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -57,13 +57,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: ramblings-of-a-rational-man-task-
+      thread-name-prefix: ramblingsofarationalman-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: ramblings-of-a-rational-man-scheduling-
+      thread-name-prefix: ramblingsofarationalman-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -81,7 +81,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'ramblingsOfARationalManApp'
+    name: 'ramblingsofarationalmanApp'
   logging:
     # To test json console appender
     use-json-format: false
@@ -97,7 +97,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: NTlhYWMzYjYxN2E0YjZjNzk3NTkzY2U4MGU2Zjg4NzY0ZGM1NzgzYjYzZWQ4NjNlZTFiYmRmMjAxODJkMzNiN2VhMDkyOTRiYmY0MWNjZDYzZDk5MmI1MjlmNDBhZWYyZWJkZmZjMjYwYzc2NjJmNmFlZjZmZWE0OWRlODBmZGM=
+        base64-secret: Yzc1NGQzN2YwYzZiMDYyYTdmMDIxN2EyMmE5NDAzMWUwODUzNmIzMDY0NGU5ZjNiOGYwNjIxNjUwYjIwNGZkZTllOTg2ZGJhYmI3M2EzZjBiYTI5NmY3MWQ1NjhhMjgyNjA5MjU3MDEzNzgzNjUwY2UwNWNjM2E2MzU3ZjMyYjY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
   metrics:

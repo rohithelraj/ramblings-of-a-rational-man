@@ -1,30 +1,30 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <div *ngIf="journal">
-            <!--<h2><span jhiTranslate="ramblingsOfARationalManApp.journal.detail.title">Journal</span> {{ journal.id }}</h2>-->
+            <!--<h2><span jhiTranslate="ramblingsofarationalmanApp.journal.detail.title">Journal</span> {{ journal.id }}</h2>-->
 
             <hr>
 
             <jhi-alert-error></jhi-alert-error>
 
             <dl class="row-md jh-entity-details">
-                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.title">Title</span></dt>
+                <dt><span jhiTranslate="ramblingsofarationalmanApp.journal.title">Title</span></dt>
                 <dd>
                     <h1>{{ journal.title }}</h1>
                 </dd>
-                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.tags">Tags</span></dt>
+                <dt><span jhiTranslate="ramblingsofarationalmanApp.journal.tags">Tags</span></dt>
                 <dd>
-                    <span class="btn btn-info" jhiTranslate="{{ 'ramblingsOfARationalManApp.JournalType.' + journal.tags }}">{{ journal.tags }}</span>
+                    <span class="btn btn-info" jhiTranslate="{{ 'ramblingsofarationalmanApp.journalType.' + journal.tags }}">{{ journal.tags }}</span>
                 </dd>
-                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.journalDate">Journal Date</span></dt>
+                <dt><span jhiTranslate="ramblingsofarationalmanApp.journal.journalDate">Journal Date</span></dt>
                 <dd>
 
                     <span class="btn btn-warning">{{dateDetail}}</span>
                 </dd>
-                <dt><span jhiTranslate="ramblingsOfARationalManApp.journal.text">Text</span></dt>
+                <dt><span jhiTranslate="ramblingsofarationalmanApp.journal.text">Text</span></dt>
                 <dd>
                     <angular-editor  [config]="config"[(ngModel)]="journal.text"
-                                     >
+                    >
                     </angular-editor>
 
                 </dd>

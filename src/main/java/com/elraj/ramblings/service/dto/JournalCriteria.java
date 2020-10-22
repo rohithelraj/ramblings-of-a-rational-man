@@ -3,7 +3,7 @@ package com.elraj.ramblings.service.dto;
 import java.io.Serializable;
 import java.util.Objects;
 import io.github.jhipster.service.Criteria;
-import com.elraj.ramblings.domain.enumeration.JournalType;
+import com.elraj.ramblings.domain.enumeration.journalType;
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.DoubleFilter;
 import io.github.jhipster.service.filter.Filter;
@@ -24,20 +24,20 @@ import io.github.jhipster.service.filter.ZonedDateTimeFilter;
  */
 public class JournalCriteria implements Serializable, Criteria {
     /**
-     * Class for filtering JournalType
+     * Class for filtering journalType
      */
-    public static class JournalTypeFilter extends Filter<JournalType> {
+    public static class journalTypeFilter extends Filter<journalType> {
 
-        public JournalTypeFilter() {
+        public journalTypeFilter() {
         }
 
-        public JournalTypeFilter(JournalTypeFilter filter) {
+        public journalTypeFilter(journalTypeFilter filter) {
             super(filter);
         }
 
         @Override
-        public JournalTypeFilter copy() {
-            return new JournalTypeFilter(this);
+        public journalTypeFilter copy() {
+            return new journalTypeFilter(this);
         }
 
     }
@@ -48,7 +48,7 @@ public class JournalCriteria implements Serializable, Criteria {
 
     private StringFilter title;
 
-    private JournalTypeFilter tags;
+    private journalTypeFilter tags;
 
     private ZonedDateTimeFilter journalDate;
 
@@ -86,11 +86,11 @@ public class JournalCriteria implements Serializable, Criteria {
         this.title = title;
     }
 
-    public JournalTypeFilter getTags() {
+    public journalTypeFilter getTags() {
         return tags;
     }
 
-    public void setTags(JournalTypeFilter tags) {
+    public void setTags(journalTypeFilter tags) {
         this.tags = tags;
     }
 

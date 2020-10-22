@@ -1,6 +1,6 @@
 package com.elraj.ramblings.service;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.config.Constants;
 import com.elraj.ramblings.domain.User;
 import com.elraj.ramblings.repository.UserRepository;
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @Transactional
 public class UserServiceIT {
 

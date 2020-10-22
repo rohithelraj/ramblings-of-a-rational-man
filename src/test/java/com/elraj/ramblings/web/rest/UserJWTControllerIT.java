@@ -1,6 +1,6 @@
 package com.elraj.ramblings.web.rest;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.domain.User;
 import com.elraj.ramblings.repository.UserRepository;
 import com.elraj.ramblings.web.rest.vm.LoginVM;
@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 public class UserJWTControllerIT {
 
     @Autowired

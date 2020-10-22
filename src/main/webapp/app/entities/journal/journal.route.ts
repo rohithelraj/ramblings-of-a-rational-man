@@ -41,7 +41,7 @@ export const journalRoute: Routes = [
     data: {
       authorities: [Authority.USER],
       defaultSort: 'id,asc',
-      pageTitle: 'ramblingsOfARationalManApp.journal.home.title',
+      pageTitle: 'ramblingsofarationalmanApp.journal.home.title',
     },
     canActivate: [UserRouteAccessService],
   },
@@ -53,7 +53,7 @@ export const journalRoute: Routes = [
     },
     data: {
       authorities: [Authority.USER],
-      pageTitle: 'ramblingsOfARationalManApp.journal.home.title',
+      pageTitle: 'ramblingsofarationalmanApp.journal.home.title',
     },
     canActivate: [UserRouteAccessService],
   },
@@ -65,7 +65,7 @@ export const journalRoute: Routes = [
     },
     data: {
       authorities: [Authority.USER],
-      pageTitle: 'ramblingsOfARationalManApp.journal.home.title',
+      pageTitle: 'ramblingsofarationalmanApp.journal.home.title',
     },
     canActivate: [UserRouteAccessService],
   },
@@ -77,7 +77,7 @@ export const journalRoute: Routes = [
     },
     data: {
       authorities: [Authority.USER],
-      pageTitle: 'ramblingsOfARationalManApp.journal.home.title',
+      pageTitle: 'ramblingsofarationalmanApp.journal.home.title',
     },
     canActivate: [UserRouteAccessService],
   },

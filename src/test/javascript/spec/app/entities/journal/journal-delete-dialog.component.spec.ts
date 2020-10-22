@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { of } from 'rxjs';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { RamblingsOfARationalManTestModule } from '../../../test.module';
+import { RamblingsofarationalmanTestModule } from '../../../test.module';
 import { MockEventManager } from '../../../helpers/mock-event-manager.service';
 import { MockActiveModal } from '../../../helpers/mock-active-modal.service';
 import { JournalDeleteDialogComponent } from 'app/entities/journal/journal-delete-dialog.component';
@@ -19,7 +19,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [RamblingsOfARationalManTestModule],
+        imports: [RamblingsofarationalmanTestModule],
         declarations: [JournalDeleteDialogComponent],
       })
         .overrideTemplate(JournalDeleteDialogComponent, '')

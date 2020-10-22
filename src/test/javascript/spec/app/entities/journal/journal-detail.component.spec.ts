@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { RamblingsOfARationalManTestModule } from '../../../test.module';
+import { RamblingsofarationalmanTestModule } from '../../../test.module';
 import { JournalDetailComponent } from 'app/entities/journal/journal-detail.component';
 import { Journal } from 'app/shared/model/journal.model';
 
@@ -14,7 +14,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [RamblingsOfARationalManTestModule],
+        imports: [RamblingsofarationalmanTestModule],
         declarations: [JournalDetailComponent],
         providers: [{ provide: ActivatedRoute, useValue: route }],
       })

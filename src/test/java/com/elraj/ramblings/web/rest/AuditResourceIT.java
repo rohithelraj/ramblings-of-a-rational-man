@@ -1,6 +1,6 @@
 package com.elraj.ramblings.web.rest;
 
-import com.elraj.ramblings.RamblingsOfARationalManApp;
+import com.elraj.ramblings.RamblingsofarationalmanApp;
 import com.elraj.ramblings.domain.PersistentAuditEvent;
 import com.elraj.ramblings.repository.PersistenceAuditEventRepository;
 import com.elraj.ramblings.security.AuthoritiesConstants;
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = RamblingsOfARationalManApp.class)
+@SpringBootTest(classes = RamblingsofarationalmanApp.class)
 @Transactional
 public class AuditResourceIT {
 

@@ -3,7 +3,7 @@ package com.elraj.ramblings.service.dto;
 import java.time.ZonedDateTime;
 import javax.validation.constraints.*;
 import java.io.Serializable;
-import com.elraj.ramblings.domain.enumeration.JournalType;
+import com.elraj.ramblings.domain.enumeration.journalType;
 
 /**
  * A DTO for the {@link com.elraj.ramblings.domain.Journal} entity.
@@ -16,7 +16,7 @@ public class JournalDTO implements Serializable {
     private String title;
 
     @NotNull
-    private JournalType tags;
+    private journalType tags;
 
     @NotNull
     private ZonedDateTime journalDate;
@@ -41,11 +41,11 @@ public class JournalDTO implements Serializable {
         this.title = title;
     }
 
-    public JournalType getTags() {
+    public journalType getTags() {
         return tags;
     }
 
-    public void setTags(JournalType tags) {
+    public void setTags(journalType tags) {
         this.tags = tags;
     }
 

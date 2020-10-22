@@ -104,6 +104,9 @@ TODO            text
 .htaccess       text
 *.npmignore     text
 
+## HEROKU
+Procfile        text
+.slugignore     text
 
 ## AUDIO
 *.kar           binary

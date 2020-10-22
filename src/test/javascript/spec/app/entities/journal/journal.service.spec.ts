@@ -4,7 +4,7 @@ import * as moment from 'moment';
 import { DATE_TIME_FORMAT } from 'app/shared/constants/input.constants';
 import { JournalService } from 'app/entities/journal/journal.service';
 import { IJournal, Journal } from 'app/shared/model/journal.model';
-import { JournalType } from 'app/shared/model/enumerations/journal-type.model';
+import { journalType } from 'app/shared/model/enumerations/journal-type.model';
 
 describe('Service Tests', () => {
   describe('Journal Service', () => {
@@ -25,7 +25,7 @@ describe('Service Tests', () => {
       httpMock = injector.get(HttpTestingController);
       currentDate = moment();
 
-      elemDefault = new Journal(0, 'AAAAAAA', JournalType.RAMBLING, currentDate, 'AAAAAAA');
+      elemDefault = new Journal(0, 'AAAAAAA', journalType.RAMBLING, currentDate, 'AAAAAAA');
     });
 
     describe('Service methods', () => {

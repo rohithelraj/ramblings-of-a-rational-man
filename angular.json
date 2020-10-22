@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ramblings-of-a-rational-man": {
+    "ramblingsofarationalman": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
@@ -29,7 +29,7 @@
       "architect": {}
     }
   },
-  "defaultProject": "ramblings-of-a-rational-man",
+  "defaultProject": "ramblingsofarationalman",
   "cli": {
     "packageManager": "npm"
   }

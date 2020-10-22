@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import './vendor';
-import { RamblingsOfARationalManSharedModule } from 'app/shared/shared.module';
-import { RamblingsOfARationalManCoreModule } from 'app/core/core.module';
-import { RamblingsOfARationalManAppRoutingModule } from './app-routing.module';
-import { RamblingsOfARationalManHomeModule } from './home/home.module';
-import { MenuModule } from '@kinect-pro/ngp-radial-menu';
-import { RamblingsOfARationalManEntityModule } from './entities/entity.module';
+import { RamblingsofarationalmanSharedModule } from 'app/shared/shared.module';
+import { RamblingsofarationalmanCoreModule } from 'app/core/core.module';
+import { RamblingsofarationalmanAppRoutingModule } from './app-routing.module';
+import { RamblingsofarationalmanHomeModule } from './home/home.module';
+import { RamblingsofarationalmanEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -19,15 +18,14 @@ import { ErrorComponent } from './layouts/error/error.component';
 @NgModule({
   imports: [
     BrowserModule,
-    RamblingsOfARationalManSharedModule,
-    MenuModule,
-    RamblingsOfARationalManCoreModule,
-    RamblingsOfARationalManHomeModule,
+    RamblingsofarationalmanSharedModule,
+    RamblingsofarationalmanCoreModule,
+    RamblingsofarationalmanHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
-    RamblingsOfARationalManEntityModule,
-    RamblingsOfARationalManAppRoutingModule,
+    RamblingsofarationalmanEntityModule,
+    RamblingsofarationalmanAppRoutingModule,
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [MainComponent],
 })
-export class RamblingsOfARationalManAppModule {}
+export class RamblingsofarationalmanAppModule {}
