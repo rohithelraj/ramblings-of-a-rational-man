@@ -10,6 +10,15 @@
         "journal": "Journal",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
+      "content": {
+        "main": "Inhalt",
+        "bookReviews": "Buchrezensionen",
+        "politicalThought": "Politische Gedanken",
+        "rationalThought": "Rationales Denken",
+        "carnaticMusic": "Karnatische Musik",
+        "populationGenetics": "Populationsgenetik",
+        "sideHustles": "Side Hustles"
+      },
       "account": {
         "main": "Zugang",
         "settings": "Einstellungen",
