@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+    <span>angular-mgl-timeline demo</span>
+</mat-toolbar>
+<mat-toolbar>
+    <button mat-raised-button (click)="addEntry()">Add Entry</button>
+    <button mat-raised-button (click)="removeEntry()">Remove Entry</button>
+    <button mat-raised-button (click)="alternate = !alternate">Toggle Alternate</button>
+    <button mat-raised-button (click)="toggle = !toggle">Toggle Toggle</button>
+    <button mat-raised-button (click)="expandEnabled = !expandEnabled">Toggle Expand Enabled</button>
+    <button mat-raised-button (click)="toggleSide()">Toggle Side</button>
+    <button mat-raised-button (click)="contentAnimation = !contentAnimation">Toggle Content Animation</button>
+</mat-toolbar>
+<mat-toolbar>
+    <button mat-raised-button (click)="color = !color">Toggle Dot Color</button>
+    <button mat-raised-button (click)="dotAnimation = !dotAnimation">Toggle Dot Animation</button>
+    <button mat-raised-button (click)="size = size + 10">Increase Dot size</button>
+    <button mat-raised-button (click)="size = size - 10">Decrease Dot size</button>
+</mat-toolbar>
+
+
+<mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry *ngFor="let entry of entries; let i = index;" (expand)="onExpandEntry($event, i)">
+        <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+            <div>{{entry.header}}</div>
+        </mgl-timeline-entry-header>
+        <mgl-timeline-entry-content [expandAnimationTiming]="contentAnimation ? '200ms ease' : '0ms'" [collapseAnimationTiming]="contentAnimation ? '100ms ease' : '0ms'">
+            <div>
+                <div>{{entry.content}}</div>
+                <div>{{entry.content}}</div>
+                <div>{{entry.content}}</div>
+            </div>
+        </mgl-timeline-entry-content>
+        <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                                [size]="size"
+                                (click)="onDotClick($event)"
+                                [expandAnimationTiming]="dotAnimation ? '200ms ease' : '0ms'"
+                                [collapseAnimationTiming]="dotAnimation ? '100ms ease' : '0ms'"
+        ></mgl-timeline-entry-dot>
+        <mgl-timeline-entry-side>2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+</mgl-timeline>
+

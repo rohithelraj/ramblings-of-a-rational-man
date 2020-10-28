@@ -7,9 +7,10 @@ import { JournalDetailComponent } from './journal-detail.component';
 import { JournalUpdateComponent } from './journal-update.component';
 import { JournalDeleteDialogComponent } from './journal-delete-dialog.component';
 import { journalRoute } from './journal.route';
+import { TimelineModule } from '../../timeline/timeline.module';
 
 @NgModule({
-  imports: [RamblingsofarationalmanSharedModule, RouterModule.forChild(journalRoute), AngularEditorModule],
+  imports: [RamblingsofarationalmanSharedModule, RouterModule.forChild(journalRoute), AngularEditorModule, TimelineModule],
   declarations: [JournalComponent, JournalDetailComponent, JournalUpdateComponent, JournalDeleteDialogComponent],
   entryComponents: [JournalDeleteDialogComponent],
 })
