@@ -1,5 +1,6 @@
 package com.elraj.ramblings.domain;
 
+import com.elraj.ramblings.domain.enumeration.JournalType;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -9,7 +10,6 @@ import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.time.ZonedDateTime;
 
-import com.elraj.ramblings.domain.enumeration.journalType;
 
 /**
  * A Journal.
@@ -32,7 +32,7 @@ public class Journal implements Serializable {
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(name = "tags", nullable = false)
-    private journalType tags;
+    private JournalType tags;
 
     @NotNull
     @Column(name = "journal_date", nullable = false)
@@ -64,16 +64,16 @@ public class Journal implements Serializable {
         this.title = title;
     }
 
-    public journalType getTags() {
+    public JournalType getTags() {
         return tags;
     }
 
-    public Journal tags(journalType tags) {
+    public Journal tags(JournalType tags) {
         this.tags = tags;
         return this;
     }
 
-    public void setTags(journalType tags) {
+    public void setTags(JournalType tags) {
         this.tags = tags;
     }
 

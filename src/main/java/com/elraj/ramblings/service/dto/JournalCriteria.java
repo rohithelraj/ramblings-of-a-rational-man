@@ -3,7 +3,7 @@ package com.elraj.ramblings.service.dto;
 import java.io.Serializable;
 import java.util.Objects;
 import io.github.jhipster.service.Criteria;
-import com.elraj.ramblings.domain.enumeration.journalType;
+import com.elraj.ramblings.domain.enumeration.JournalType;
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.DoubleFilter;
 import io.github.jhipster.service.filter.Filter;
@@ -26,7 +26,7 @@ public class JournalCriteria implements Serializable, Criteria {
     /**
      * Class for filtering journalType
      */
-    public static class journalTypeFilter extends Filter<journalType> {
+    public static class journalTypeFilter extends Filter<JournalType> {
 
         public journalTypeFilter() {
         }
