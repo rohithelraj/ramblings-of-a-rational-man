@@ -8,9 +8,16 @@ import { JournalUpdateComponent } from './journal-update.component';
 import { JournalDeleteDialogComponent } from './journal-delete-dialog.component';
 import { journalRoute } from './journal.route';
 import { TimelineModule } from '../../timeline/timeline.module';
+import { VerticalTimelineModule } from '../../vertical-timeline/vertical-timeline.module';
 
 @NgModule({
-  imports: [RamblingsofarationalmanSharedModule, RouterModule.forChild(journalRoute), AngularEditorModule, TimelineModule],
+  imports: [
+    RamblingsofarationalmanSharedModule,
+    RouterModule.forChild(journalRoute),
+    AngularEditorModule,
+    TimelineModule,
+    VerticalTimelineModule,
+  ],
   declarations: [JournalComponent, JournalDetailComponent, JournalUpdateComponent, JournalDeleteDialogComponent],
   entryComponents: [JournalDeleteDialogComponent],
 })

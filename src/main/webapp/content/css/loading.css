@@ -1,3 +1,5 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
+
 @keyframes lds-pacman-1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -149,4 +151,42 @@
 .app-loading .lds-pacman > div:nth-child(1) div:nth-child(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+#timeline .timeline-item .timeline-content h2 {
+  background: #3498db !important;
+}
+/*
+.timeline-icon{
+  background: #3498db !important;
+
+}
+#timeline:before{
+  background: #3498db !important;
+
+}
+.bg-purple{
+  background-color:#3498db !important;
+}
+#timeline .timeline-item .timeline-content:before{
+  border-left: 7px solid #3498db !important;
+}
+*/
+#timeline .timeline-item .timeline-content {
+  color: #231f20;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #3498db !important;
+}
+.teste .bg-purple {
+  background-color: #3498db !important;
+}
+#timeline:before {
+  background: #3498db !important;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  border-right: 7px solid #3498db !important;
+}
+#timeline .timeline-item .timeline-content:before,
+#timeline .timeline-item .timeline-content.right:before {
+  border-left: 7px solid #3498db !important;
 }
