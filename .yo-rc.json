@@ -39,6 +39,9 @@
     "nativeLanguage": "en",
     "languages": ["en", "de"],
     "blueprints": [],
-    "lastLiquibaseTimestamp": 1603371433000
+    "lastLiquibaseTimestamp": 1603371433000,
+    "herokuAppName": "ramblings-of-a-rational-man",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "1.8"
   }
 }
