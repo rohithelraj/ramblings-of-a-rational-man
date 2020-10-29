@@ -12,7 +12,7 @@ export class VerticalTimelineComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const self = this;
+    //const self = this;
 
     this.items.push({
       label: 'Action',
@@ -22,8 +22,8 @@ export class VerticalTimelineComponent implements OnInit {
       content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
       title: '18 de June, 2019, 10:12',
-      command() {
-        alert(`test: ${self.externalVariable}`);
+      command(): void {
+        //  alert(`test: ${self.externalVariable}`);
       },
     });
 
@@ -35,7 +35,7 @@ export class VerticalTimelineComponent implements OnInit {
       content: `Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.`,
       title: '11 de November, 2019, 12:00',
-      command() {
+      command(): void {
         alert('Action!');
       },
     });
@@ -48,7 +48,7 @@ export class VerticalTimelineComponent implements OnInit {
       content: `Duis aute irure dolor in reprehenderit in voluptate velit
        esse cillum dolore eu fugiat nulla pariatur.`,
       title: '01 de December, 2019, 10:12',
-      command() {
+      command(): void {
         alert('Action!');
       },
     });
@@ -61,7 +61,7 @@ export class VerticalTimelineComponent implements OnInit {
       content: `Excepteur sint occaecat cupidatat non proident,
       sunt in culpa qui officia deserunt mollit anim id est laborum.`,
       title: '27 de January, 2020, 10:35',
-      command() {
+      command(): void {
         alert('Action!');
       },
     });
@@ -73,7 +73,7 @@ export class VerticalTimelineComponent implements OnInit {
       content: `Excepteur sint occaecat cupidatat non proident,
       sunt in culpa qui officia deserunt mollit anim id est laborum.`,
       title: '27 de January, 2020, 10:35',
-      command() {
+      command(): void {
         alert('Action!');
       },
     });

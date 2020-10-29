@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'jhi-timeline',
@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline.component.scss'],
 })
 export class TimelineComponent {
-  alternate: boolean = true;
-  toggle: boolean = true;
-  color: boolean = false;
-  size: number = 40;
-  expandEnabled: boolean = true;
-  contentAnimation: boolean = true;
-  dotAnimation: boolean = true;
+  alternate = true;
+  toggle = true;
+  color = false;
+  size = 40;
+  expandEnabled = true;
+  contentAnimation = true;
+  dotAnimation = true;
   side = 'left';
 
   entries = [
@@ -22,34 +22,34 @@ export class TimelineComponent {
     },
   ];
 
-  addEntry() {
+  addEntry(): void {
     this.entries.push({
       header: 'header',
       content: 'content',
     });
   }
 
-  removeEntry() {
+  removeEntry(): void {
     this.entries.pop();
   }
 
-  onHeaderClick(event: any) {
+  onHeaderClick(event: any): void {
     if (!this.expandEnabled) {
       event.stopPropagation();
     }
   }
 
-  onDotClick(event: any) {
+  onDotClick(event: any): void {
     if (!this.expandEnabled) {
       event.stopPropagation();
     }
   }
 
-  onExpandEntry(expanded: any, index: any) {
-    console.log(`Expand status of entry #${index} changed to ${expanded}`);
+  onExpandEntry(expanded: any, index: any): void {
+    //console.log(`Expand status of entry #${index} changed to ${expanded}`);
   }
 
-  toggleSide() {
+  toggleSide(): void {
     this.side = this.side === 'left' ? 'right' : 'left';
   }
 }
