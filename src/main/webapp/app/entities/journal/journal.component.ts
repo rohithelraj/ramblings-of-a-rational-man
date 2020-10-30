@@ -10,12 +10,14 @@ import { IJournal } from 'app/shared/model/journal.model';
 import { ITEMS_PER_PAGE } from 'app/shared/constants/pagination.constants';
 import { JournalService } from './journal.service';
 import { JournalDeleteDialogComponent } from './journal-delete-dialog.component';
+import { TimelineItem } from 'ngx-vertical-timeline';
 
 @Component({
   selector: 'jhi-journal',
   templateUrl: './journal.component.html',
 })
 export class JournalComponent implements OnInit, OnDestroy {
+  items: TimelineItem[] = [];
   journals?: IJournal[];
   eventSubscriber?: Subscription;
   totalItems = 0;
@@ -108,6 +110,25 @@ export class JournalComponent implements OnInit, OnDestroy {
         },
       });
     }
+    const localItems = this.items;
+    data?.forEach(function (journal): void {
+      localItems.push({
+        label: 'Go',
+        icon: 'fa fa-calendar-plus-o',
+        styleClass: 'teste',
+        color: '#3498db',
+        disabled: false,
+        visible: true,
+        active: true,
+        content: journal?.journalDate?.toString(),
+        title: journal.title,
+        command(): void {
+          const currentUrl = window.location.href;
+          window.location.replace(currentUrl + '/' + journal.id + '/view');
+        },
+      });
+    });
+    this.items = localItems;
     this.journals = data || [];
     this.ngbPaginationPage = this.page;
   }

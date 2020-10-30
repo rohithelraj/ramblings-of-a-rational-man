@@ -9,6 +9,7 @@ import { JournalDeleteDialogComponent } from './journal-delete-dialog.component'
 import { journalRoute } from './journal.route';
 import { TimelineModule } from '../../timeline/timeline.module';
 import { VerticalTimelineModule } from '../../vertical-timeline/vertical-timeline.module';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { VerticalTimelineModule } from '../../vertical-timeline/vertical-timelin
     AngularEditorModule,
     TimelineModule,
     VerticalTimelineModule,
+    MatTabsModule,
   ],
   declarations: [JournalComponent, JournalDetailComponent, JournalUpdateComponent, JournalDeleteDialogComponent],
   entryComponents: [JournalDeleteDialogComponent],

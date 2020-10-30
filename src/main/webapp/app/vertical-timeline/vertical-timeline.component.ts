@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TimelineItem } from 'ngx-vertical-timeline';
 
 @Component({
@@ -7,14 +7,13 @@ import { TimelineItem } from 'ngx-vertical-timeline';
   styleUrls: ['./vertical-timeline.component.scss'],
 })
 export class VerticalTimelineComponent implements OnInit {
-  items: TimelineItem[] = [];
+  @Input() items: TimelineItem[] = [];
   externalVariable = 'hello';
   constructor() {}
 
   ngOnInit(): void {
     //const self = this;
-
-    this.items.push({
+    /*this.items.push({
       label: 'Action',
       icon: 'fa fa-calendar-plus-o',
       styleClass: 'teste',
@@ -76,6 +75,6 @@ export class VerticalTimelineComponent implements OnInit {
       command(): void {
         alert('Action!');
       },
-    });
+    });*/
   }
 }
