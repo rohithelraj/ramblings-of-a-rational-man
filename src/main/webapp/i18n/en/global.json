@@ -13,9 +13,11 @@
       "content": {
         "main": "Content",
         "bookReviews": "Book Reviews",
-        "politicalThought": "Political Thought",
-        "rationalThought": "Rational Thought",
+        "bookReviews.sub": "12 Reviews",
+        "bookReviews.info": "Ones own sometimes incoherent ramblings about the books one read.",
         "carnaticMusic": "Carnatic Music",
+        "carnaticMusic.sub": "5 Tracks",
+        "carnaticMusic.info": "One tries to replicate 16th Century to 20th Century carnatic music in this profile.",
         "populationGenetics": "Population Genetics",
         "sideHustles": "Side Hustles"
       },
