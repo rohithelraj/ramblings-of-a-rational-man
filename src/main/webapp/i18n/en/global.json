@@ -12,6 +12,7 @@
       },
       "content": {
         "main": "Content",
+        "edakkal": "This is probably how a bygone artist portrayed oneself in the natural cave systems of 11.624669 LAT., 76.2358 LON..<br> Who knows what thoughts might have gone through thee mind, when thou contrived this carving..",
         "bookReviews": "Book Reviews",
         "bookReviews.sub": "12 Reviews",
         "bookReviews.info": "Ones own sometimes incoherent ramblings about the books one read.",
@@ -19,7 +20,13 @@
         "carnaticMusic.sub": "5 Tracks",
         "carnaticMusic.info": "One tries to replicate 16th Century to 20th Century carnatic music in this profile.",
         "populationGenetics": "Population Genetics",
-        "sideHustles": "Side Hustles"
+        "populationGenetics.sub1": "1 Completed Vision",
+        "populationGenetics.sub2": "2 Ongoing Visions",
+        "populationGenetics.sub3": "3 Planned Visions",
+        "populationGenetics.info": "Walk with me, when i take a deep dive into the vast recesses of time, exploring and rediscovering the ancient human and ape saga using genetics, palaenthology and experimental archaeology.",
+        "sideHustles": "Side Hustles",
+        "sideHustles.sub": "In the making",
+        "sideHustles.info": "Tales of wanderings in search of knowledge, pure joy, adrenaline and great conversations."
       },
       "account": {
         "main": "Account",

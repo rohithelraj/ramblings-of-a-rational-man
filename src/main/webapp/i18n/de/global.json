@@ -12,6 +12,7 @@
       },
       "content": {
         "main": "Inhalt",
+        "edakkal": "So hat sich wohl ein vergangener Künstler in den natürlichen Höhlensystemen von 11.624669 LAT., 76.2358 LON. dargestellt.<br> Wer weiß, welche Gedanken dir durch den Kopf gegangen sein mögen, als du diese Schnitzerei ersonnen hast.",
         "bookReviews": "Buchrezensionen",
         "bookReviews.sub": "12 Bewertungen",
         "bookReviews.info": "Das eigene, manchmal unzusammenhängende Geschwafel über die gelesenen Bücher.",
@@ -19,7 +20,13 @@
         "carnaticMusic.sub": "5 Spuren",
         "carnaticMusic.info": "In diesem Profil versucht man, karnatische Musik des 16. bis 20. Jahrhunderts nachzubilden.",
         "populationGenetics": "Populationsgenetik",
-        "sideHustles": "Side Hustles"
+        "populationGenetics.sub1": "1 Fertige Vision",
+        "populationGenetics.sub2": "2 Laufende Visionen",
+        "populationGenetics.sub3": "3 Geplante Visionen",
+        "populationGenetics.info": "Begleiten Sie mich, wenn ich in die Weiten der Zeit eintauche und mit Hilfe von Genetik, Paläontologie und experimenteller Archäologie die uralte Menschen- und Affen-Saga erforsche und wiederentdecke.",
+        "sideHustles": "Side Hustles",
+        "sideHustles.sub": "In Arbeit",
+        "sideHustles.info": "Geschichten von Wanderungen auf der Suche nach Wissen, purer Freude, Adrenalin und tollen Gesprächen."
       },
       "account": {
         "main": "Zugang",
